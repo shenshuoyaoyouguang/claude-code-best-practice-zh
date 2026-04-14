@@ -332,37 +332,6 @@ claude
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
-<a id="billion-dollar-questions"></a>
-![十亿美元问题](!/tags/billion-dollar-questions.svg)
-
-*如果你有答案，请发邮件到 shanraisshan@gmail.com 告诉我*
-
-**记忆与指令 (4)**
-
-1. CLAUDE.md 里到底应该放什么——什么又应该去掉？
-2. 如果你已经有 CLAUDE.md，还需要单独的 constitution.md 或 rules.md 吗？
-3. 应该多久更新一次 CLAUDE.md？如何判断它已经过时了？
-4. 为什么 Claude 仍然会忽略 CLAUDE.md 中的指令——即使全部大写写着 MUST？（[reddit](https://reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/)）
-
-**智能体、技能与工作流 (6)**
-
-1. 何时使用命令 vs 智能体 vs 技能——以及何时直接用原生 Claude Code 更好？
-2. 随着模型能力的提升，应该多久更新一次你的智能体、命令和工作流？
-3. 给子智能体赋予详细人设能提升质量吗？研究/QA 子智能体的"完美人设/提示词"长什么样？
-4. 应该依赖 Claude Code 内置的计划模式，还是构建自己的计划命令/智能体来强制执行团队工作流？
-5. 如果你有个人技能（例如 /implement 带有你的编码风格），如何在不冲突的情况下融入社区技能（例如 /simplify）——当它们产生分歧时谁说了算？
-6. 我们到了吗？能否将现有代码库转换为规格说明，删除代码，然后仅凭这些规格说明让 AI 重新生成完全相同的代码？
-
-**规格与文档 (3)**
-
-1. 代码库中的每个功能都应该有一个 Markdown 规格文件吗？
-2. 需要多久更新一次规格文件，以避免实现新功能时变得过时？
-3. When implementing a new feature, how do you handle the ripple effect on specs for other features?
-
-<p align="center">
-  <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
-</p>
-
 ## 报告
 
 <p align="center">
@@ -386,9 +355,9 @@ claude
 ![如何使用](!/tags/how-to-use.svg)
 
 ```
-1. Read the repo like a course, learn what commands, agents, skills, and hooks are before trying to use them.
-2. Clone this repo and play with the examples, try /weather-orchestrator, listen to the hook sounds, run agent teams, so you can see how things actually work.
-3. Go to your own project and ask Claude to suggest what best practices from this repo you should add, give it this repo as a reference so it knows what's possible.
+1. 像学习课程一样阅读代码库，在尝试使用之前弄清楚什么是命令、智能体、技能和钩子。
+2. 克隆此代码库并动手实验，试试 /weather-orchestrator，听听钩子音效，运行智能体团队，这样你就能看到它们实际是如何工作的。
+3. 打开你自己的项目，让 Claude 建议你应该从本代码库中添加哪些最佳实践，给它这个代码库作为参考，这样它就知道有哪些可能性。
 ```
 
 <a href="https://www.youtube.com/watch?v=AkAhkalkRY4"><img src="!/thumbnail/video-1.png" alt="在 YouTube 上观看" width="300"></a>
@@ -412,12 +381,12 @@ claude
 
 > | # | 工作流 | 描述 |
 > |---|----------|-------------|
-> | 1 | /workflows:development-workflows | Update the DEVELOPMENT WORKFLOWS table and cross-workflow analysis report by researching all 10 workflow repos in parallel |
-> | 2 | /workflows:best-practice:workflow-concepts | Update the README CONCEPTS section with the latest Claude Code features and concepts |
-> | 3 | /workflows:best-practice:workflow-claude-settings | Track Claude Code settings report changes and find what needs updating |
-> | 4 | /workflows:best-practice:workflow-claude-subagents | Track Claude Code subagents report changes and find what needs updating |
-> | 5 | /workflows:best-practice:workflow-claude-commands | Track Claude Code commands report changes and find what needs updating |
-> | 6 | /workflows:best-practice:workflow-claude-skills | Track Claude Code skills report changes and find what needs updating |
+> | 1 | /workflows:development-workflows | 并行研究所有 10 个工作流代码库，更新开发工作流表和跨工作流分析报告 |
+> | 2 | /workflows:best-practice:workflow-concepts | 使用最新的 Claude Code 功能和概念更新 README 概念部分 |
+> | 3 | /workflows:best-practice:workflow-claude-settings | 跟踪 Claude Code 设置报告的变更，找出需要更新的内容 |
+> | 4 | /workflows:best-practice:workflow-claude-subagents | 跟踪 Claude Code 子代理报告的变更，找出需要更新的内容 |
+> | 5 | /workflows:best-practice:workflow-claude-commands | 跟踪 Claude Code 命令报告的变更，找出需要更新的内容 |
+> | 6 | /workflows:best-practice:workflow-claude-skills | 跟踪 Claude Code 技能报告的变更，找出需要更新的内容 |
 
 [![Claude for OSS](!/tags/claude-for-oss.svg)](https://claude.com/contact-sales/claude-for-oss)
 [![Claude Community Ambassador](!/tags/claude-community-ambassador.svg)](https://claude.com/community/ambassadors)
@@ -427,8 +396,6 @@ claude
 ## Star 历史
 
 [![Star 历史图表](https://api.star-history.com/svg?repos=shanraisshan/claude-code-best-practice&type=Date)](https://star-history.com/#shanraisshan/claude-code-best-practice&Date)
-
-## ☠️ 初创公司 / 企业
 
 | Claude | 替代方案 |
 |-|-|
