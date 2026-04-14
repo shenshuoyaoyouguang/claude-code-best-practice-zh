@@ -1,5 +1,5 @@
 # claude-code-best-practice
-from vibe coding to agentic engineering - practice makes claude perfect
+从氛围编程到代理工程 —— 练习让 Claude 更加完美
 
 ![updated with Claude Code](https://img.shields.io/badge/updated_with_Claude_Code-v2.1.101%20(Apr%2013%2C%202026%208%3A08%20PM%20PKT)-white?style=flat&labelColor=555) <a href="https://github.com/shanraisshan/claude-code-best-practice/stargazers"><img src="https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&label=%E2%98%85&labelColor=555&color=white" alt="GitHub Stars"></a><br>
 
