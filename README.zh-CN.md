@@ -36,29 +36,29 @@ from vibe coding to agentic engineering - practice makes claude perfect
 | **AI Terms** | | [![Best Practice](!/tags/best-practice.svg)](https://github.com/shanraisshan/claude-code-codex-cursor-gemini/blob/main/reports/ai-terms.md) Agentic Engineering · Context Engineering · Vibe Coding |
 | [**Best Practices**](https://code.claude.com/docs/en/best-practices) | | Official best practices · [Prompt Engineering](https://github.com/anthropics/prompt-eng-interactive-tutorial) · [Extend Claude Code](https://code.claude.com/docs/en/features-overview) |
 
-### 🔥 Hot
+### 🔥 热门
 
-| Feature | Location | Description |
+| 功能 | 位置 | 描述 |
 |---------|----------|-------------|
-| [**Power-ups**](best-practice/claude-power-ups.md) | `/powerup` | [![Best Practice](!/tags/best-practice.svg)](best-practice/claude-power-ups.md) Interactive lessons teaching Claude Code features with animated demos (v2.1.90) |
-| [**Ultraplan**](https://code.claude.com/docs/en/ultraplan) ![beta](!/tags/beta.svg) | `/ultraplan` | Draft plans in the cloud with browser-based review, inline comments, and flexible execution — remotely or teleported back to terminal |
-| [**Claude Code Web**](https://code.claude.com/docs/en/claude-code-on-the-web) ![beta](!/tags/beta.svg) | `claude.ai/code` | Run tasks on cloud infrastructure — long-running tasks, PR auto-fix, parallel sessions with no local setup · [Scheduled Tasks](https://code.claude.com/docs/en/web-scheduled-tasks) |
-| [**Agent SDK**](https://code.claude.com/docs/en/agent-sdk/overview) | `npm` / `pip` package | Build production AI agents with Claude Code as a library — Python and TypeScript SDKs with built-in tools, hooks, subagents, and MCP · [Quickstart](https://code.claude.com/docs/en/agent-sdk/quickstart) · [Examples](https://github.com/anthropics/claude-agent-sdk-demos) |
-| [**No Flicker Mode**](https://code.claude.com/docs/en/fullscreen) ![beta](!/tags/beta.svg) | `CLAUDE_CODE_NO_FLICKER=1` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2039421575422980329) Flicker-free alt-screen rendering with mouse support, stable memory, and in-app scrolling — opt-in research preview |
-| [**Computer Use**](https://code.claude.com/docs/en/computer-use) ![beta](!/tags/beta.svg) | `computer-use` MCP server | Let Claude control your screen — open apps, click, type, and screenshot your display on macOS · [Desktop](https://code.claude.com/docs/en/desktop#let-claude-use-your-computer) |
-| [**Auto Mode**](https://code.claude.com/docs/en/permission-modes#eliminate-prompts-with-auto-mode) ![beta](!/tags/beta.svg) | `claude --enable-auto-mode` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/claudeai/status/2036503582166393240) Background safety classifier replaces manual permission prompts — Claude decides what's safe while blocking prompt injection and risky escalations · Start with `claude --enable-auto-mode` (or `--permission-mode auto`), or cycle to it with `Shift+Tab` during a session · [Blog](https://claude.com/blog/auto-mode) |
-| [**Channels**](https://code.claude.com/docs/en/channels) ![beta](!/tags/beta.svg) | `--channels`, plugin-based | Push events from Telegram, Discord, or webhooks into a running session — Claude reacts while you're away · [Reference](https://code.claude.com/docs/en/channels-reference) |
-| [**Slack**](https://code.claude.com/docs/en/slack) | `@Claude` in Slack | Mention @Claude in team chat with a coding task — routes to Claude Code web sessions for bug fixes, code reviews, and parallel task execution |
-| [**Code Review**](https://code.claude.com/docs/en/code-review) ![beta](!/tags/beta.svg) | GitHub App (managed) | [![Best Practice](!/tags/best-practice.svg)](https://x.com/claudeai/status/2031088171262554195) Multi-agent PR analysis that catches bugs, security vulnerabilities, and regressions · [Blog](https://claude.com/blog/code-review) |
-| [**GitHub Actions**](https://code.claude.com/docs/en/github-actions) | `.github/workflows/` | Automate PR reviews, issue triage, and code generation in CI/CD pipelines · [GitLab CI/CD](https://code.claude.com/docs/en/gitlab-ci-cd) |
-| [**Chrome**](https://code.claude.com/docs/en/chrome) ![beta](!/tags/beta.svg) | `--chrome`, extension | [![Best Practice](!/tags/best-practice.svg)](reports/claude-in-chrome-v-chrome-devtools-mcp.md) Browser automation via Claude in Chrome — test web apps, debug with console, automate forms, extract data from pages |
-| [**Scheduled Tasks**](https://code.claude.com/docs/en/scheduled-tasks) | `/loop`, `/schedule`, cron tools | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2030193932404150413) [![Implemented](!/tags/implemented.svg)](implementation/claude-scheduled-tasks-implementation.md) `/loop` runs prompts locally on a recurring schedule (up to 3 days) · [`/schedule`](https://code.claude.com/docs/en/web-scheduled-tasks) runs prompts in the cloud on Anthropic infrastructure — works even when your machine is off · [Announcement](https://x.com/noahzweben/status/2036129220959805859) |
-| [**Voice Dictation**](https://code.claude.com/docs/en/voice-dictation) ![beta](!/tags/beta.svg) | `/voice` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/trq212/status/2028628570692890800) Push-to-talk speech input for prompts with 20-language support and rebindable activation key |
-| [**Simplify & Batch**](https://code.claude.com/docs/en/skills#bundled-skills) | `/simplify`, `/batch` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2027534984534544489) Built-in skills for code quality and bulk operations — simplify refactors for reuse and efficiency, batch runs commands across files |
-| [**Agent Teams**](https://code.claude.com/docs/en/agent-teams) ![beta](!/tags/beta.svg) | built-in (env var) | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2019472394696683904) [![Implemented](!/tags/implemented.svg)](implementation/claude-agent-teams-implementation.md) Multiple agents working in parallel on the same codebase with shared task coordination |
-| [**Remote Control**](https://code.claude.com/docs/en/remote-control) | `/remote-control`, `/rc` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/noahzweben/status/2032533699116355819) Continue local sessions from any device — phone, tablet, or browser · [Headless Mode](https://code.claude.com/docs/en/headless) |
-| [**Git Worktrees**](https://code.claude.com/docs/en/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees) | built-in | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2025007393290272904) Isolated git branches for parallel development — each agent gets its own working copy |
-| [**Ralph Wiggum Loop**](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum) | plugin | [![Best Practice](!/tags/best-practice.svg)](https://github.com/ghuntley/how-to-ralph-wiggum) [![Implemented](!/tags/implemented.svg)](https://github.com/shanraisshan/novel-llm-26) Autonomous development loop for long-running tasks — iterates until completion |
+| [**强化提升**](best-practice/claude-power-ups.md) | `/powerup` | [![Best Practice](!/tags/best-practice.svg)](best-practice/claude-power-ups.md) 交互式课程，通过动画演示教授 Claude Code 功能 (v2.1.90) |
+| [**Ultraplan**](https://code.claude.com/docs/en/ultraplan) ![beta](!/tags/beta.svg) | `/ultraplan` | 在云端起草计划，通过浏览器进行审核、内联评论和灵活执行 —— 远程或传输回终端 |
+| [**Claude Code Web**](https://code.claude.com/docs/en/claude-code-on-the-web) ![beta](!/tags/beta.svg) | `claude.ai/code` | 在云基础设施上运行任务 —— 长时间运行的任务、PR 自动修复、并行会话，无需本地设置 · [定时任务](https://code.claude.com/docs/en/web-scheduled-tasks) |
+| [**Agent SDK**](https://code.claude.com/docs/en/agent-sdk/overview) | `npm` / `pip` 包 | 使用 Claude Code 作为库构建生产级 AI 代理 —— Python 和 TypeScript SDK，内置工具、钩子、子代理和 MCP · [快速入门](https://code.claude.com/docs/en/agent-sdk/quickstart) · [示例](https://github.com/anthropics/claude-agent-sdk-demos) |
+| [**无闪烁模式**](https://code.claude.com/docs/en/fullscreen) ![beta](!/tags/beta.svg) | `CLAUDE_CODE_NO_FLICKER=1` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2039421575422980329) 无闪烁 alt-screen 渲染，支持鼠标、稳定内存和应用内滚动 —— 可选的研究预览 |
+| [**计算机使用**](https://code.claude.com/docs/en/computer-use) ![beta](!/tags/beta.svg) | `computer-use` MCP 服务器 | 让 Claude 控制你的屏幕 —— 在 macOS 上打开应用、点击、输入和截图 · [桌面端](https://code.claude.com/docs/en/desktop#let-claude-use-your-computer) |
+| [**自动模式**](https://code.claude.com/docs/en/permission-modes#eliminate-prompts-with-auto-mode) ![beta](!/tags/beta.svg) | `claude --enable-auto-mode` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/claudeai/status/2036503582166393240) 后台安全分类器取代手动权限提示 —— Claude 判断什么是安全，同时阻止提示注入和风险升级 · 使用 `claude --enable-auto-mode`（或 `--permission mode auto`）启动，或在会话中用 `Shift+Tab` 切换 · [博客](https://claude.com/blog/auto-mode) |
+| [**频道**](https://code.claude.com/docs/en/channels) ![beta](!/tags/beta.svg) | `--channels`，插件式 | 将 Telegram、Discord 或 webhook 的事件推送到运行中的会话 —— 你不在时 Claude 也能响应 · [参考](https://code.claude.com/docs/en/channels-reference) |
+| [**Slack**](https://code.claude.com/docs/en/slack) | Slack 中的 `@Claude` | 在团队聊天中提及 @Claude 并分配编码任务 —— 路由到 Claude Code Web 会话进行 bug 修复、代码审查和并行任务执行 |
+| [**代码审查**](https://code.claude.com/docs/en/code-review) ![beta](!/tags/beta.svg) | GitHub App（托管） | [![Best Practice](!/tags/best-practice.svg)](https://x.com/claudeai/status/2031088171262554195) 多代理 PR 分析，捕获 bug、安全漏洞和回归 · [博客](https://claude.com/blog/code-review) |
+| [**GitHub Actions**](https://code.claude.com/docs/en/github-actions) | `.github/workflows/` | 在 CI/CD 流水线中自动化 PR 审查、issue 分类和代码生成 · [GitLab CI/CD](https://code.claude.com/docs/en/gitlab-ci-cd) |
+| [**Chrome 浏览器**](https://code.claude.com/docs/en/chrome) ![beta](!/tags/beta.svg) | `--chrome`，扩展 | [![Best Practice](!/tags/best-practice.svg)](reports/claude-in-chrome-v-chrome-devtools-mcp.md) 通过 Chrome 中的 Claude 进行浏览器自动化 —— 测试 web 应用、使用控制台调试、自动填写表单、从页面提取数据 |
+| [**定时任务**](https://code.claude.com/docs/en/scheduled-tasks) | `/loop`、`/schedule`、cron 工具 | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2030193932404150413) [![Implemented](!/tags/implemented.svg)](implementation/claude-scheduled-tasks-implementation.md) `/loop` 在本地按计划运行提示（最长 3 天）· [`/schedule`](https://code.claude.com/docs/en/web-scheduled-tasks) 在 Anthropic 基础设施上云端运行提示 —— 即使你的机器关闭也能工作 · [公告](https://x.com/noahzweben/status/2036129220959805859) |
+| [**语音听写**](https://code.claude.com/docs/en/voice-dictation) ![beta](!/tags/beta.svg) | `/voice` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/trq212/status/2028628570692890800) 按键说话式语音输入，支持 20 种语言，可重新绑定激活键 |
+| [**简化与批量**](https://code.claude.com/docs/en/skills#bundled-skills) | `/simplify`、`/batch` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2027534984534544489) 用于代码质量和批量操作的内置技能 —— simplify 重构以提高复用性和效率，batch 跨文件运行命令 |
+| [**代理团队**](https://code.claude.com/docs/en/agent-teams) ![beta](!/tags/beta.svg) | 内置（环境变量） | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2019472394696683904) [![Implemented](!/tags/implemented.svg)](implementation/claude-agent-teams-implementation.md) 多个代理并行处理同一代码库，共享任务协调 |
+| [**远程控制**](https://code.claude.com/docs/en/remote-control) | `/remote-control`、`/rc` | [![Best Practice](!/tags/best-practice.svg)](https://x.com/noahzweben/status/2032533699116355819) 从任何设备继续本地会话 —— 手机、平板电脑或浏览器 · [无头模式](https://code.claude.com/docs/en/headless) |
+| [**Git Worktrees**](https://code.claude.com/docs/en/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees) | 内置 | [![Best Practice](!/tags/best-practice.svg)](https://x.com/bcherny/status/2025007393290272904) 用于并行开发的隔离 git 分支 —— 每个代理获得自己的副本 |
+| [**Ralph Wiggum 循环**](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum) | 插件 | [![Best Practice](!/tags/best-practice.svg)](https://github.com/ghuntley/how-to-ralph-wiggum) [![Implemented](!/tags/implemented.svg)](https://github.com/shanraisshan/novel-llm-26) 长时间运行任务的自主开发循环 —— 迭代直到完成 |
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
@@ -66,9 +66,9 @@ from vibe coding to agentic engineering - practice makes claude perfect
 
 <a id="orchestration-workflow"></a>
 
-## <a href="orchestration-workflow/orchestration-workflow.md"><img src="!/tags/orchestration-workflow-hd.svg" alt="Orchestration Workflow"></a>
+## <a href="orchestration-workflow/orchestration-workflow.md"><img src="!/tags/orchestration-workflow-hd.svg" alt="编排工作流"></a>
 
-See [orchestration-workflow](orchestration-workflow/orchestration-workflow.md) for implementation details of <img src="!/tags/c.svg" height="14"> **Command** → <img src="!/tags/a.svg" height="14"> **Agent** → <img src="!/tags/s.svg" height="14"> **Skill** pattern.
+详见 [编排工作流](orchestration-workflow/orchestration-workflow.md) 了解 <img src="!/tags/c.svg" height="14"> **命令** → <img src="!/tags/a.svg" height="14"> **代理** → <img src="!/tags/s.svg" height="14"> **技能** 模式的实现细节。
 
 
 <p align="center">
@@ -90,11 +90,11 @@ claude
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
-## ⚙️ DEVELOPMENT WORKFLOWS
+## ⚙️ 开发工作流
 
-All major workflows converge on the same architectural pattern: **Research → Plan → Execute → Review → Ship**
+所有主要工作流都遵循相同的架构模式：**研究 → 计划 → 执行 → 审查 → 交付**
 
-| Name | ★ | Uniqueness | Plan | <img src="!/tags/a.svg" height="14"> | <img src="!/tags/c.svg" height="14"> | <img src="!/tags/s.svg" height="14"> |
+| 名称 | ★ | 独特性 | 计划 | <img src="!/tags/a.svg" height="14"> | <img src="!/tags/c.svg" height="14"> | <img src="!/tags/s.svg" height="14"> |
 |------|---|------------|------|---|---|---|
 | [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) | 154k | ![instinct scoring](https://img.shields.io/badge/instinct_scoring-ddf4ff) ![AgentShield](https://img.shields.io/badge/AgentShield-ddf4ff) ![multi-lang rules](https://img.shields.io/badge/multi--lang_rules-ddf4ff) | <img src="!/tags/a.svg" height="14"> [planner](https://github.com/affaan-m/everything-claude-code/blob/main/agents/planner.md) | 48 | 143 | 230 |
 | [Superpowers](https://github.com/obra/superpowers) | 150k | ![TDD-first](https://img.shields.io/badge/TDD--first-ddf4ff) ![Iron Laws](https://img.shields.io/badge/Iron_Laws-ddf4ff) ![whole-plan review](https://img.shields.io/badge/whole--plan_review-ddf4ff) | <img src="!/tags/s.svg" height="14"> [writing-plans](https://github.com/obra/superpowers/tree/main/skills/writing-plans) | 5 | 3 | 14 |
@@ -107,202 +107,202 @@ All major workflows converge on the same architectural pattern: **Research → P
 | [Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin) | 14k | ![Compound Learning](https://img.shields.io/badge/Compound_Learning-ddf4ff) ![Multi-Platform CLI](https://img.shields.io/badge/Multi--Platform_CLI-ddf4ff) ![Plugin Marketplace](https://img.shields.io/badge/Plugin_Marketplace-ddf4ff) | <img src="!/tags/s.svg" height="14"> [ce-plan](https://github.com/EveryInc/compound-engineering-plugin/tree/main/plugins/compound-engineering/skills/ce-plan) | 49 | 4 | 42 |
 | [HumanLayer](https://github.com/humanlayer/humanlayer) | 10k | ![RPI](https://img.shields.io/badge/RPI-ddf4ff) ![context engineering](https://img.shields.io/badge/context_engineering-ddf4ff) ![300k+ LOC](https://img.shields.io/badge/300k%2B_LOC-ddf4ff) | <img src="!/tags/c.svg" height="14"> [create_plan](https://github.com/humanlayer/humanlayer/blob/main/.claude/commands/create_plan.md) | 6 | 27 | 0 |
 
-### Others
-- [Cross-Model (Claude Code + Codex) Workflow](development-workflows/cross-model-workflow/cross-model-workflow.md) [![Implemented](!/tags/implemented.svg)](development-workflows/cross-model-workflow/cross-model-workflow.md)
+### 其他
+- [跨模型（Claude Code + Codex）工作流](development-workflows/cross-model-workflow/cross-model-workflow.md) [![Implemented](!/tags/implemented.svg)](development-workflows/cross-model-workflow/cross-model-workflow.md)
 - [RPI](development-workflows/rpi/rpi-workflow.md) [![Implemented](!/tags/implemented.svg)](development-workflows/rpi/rpi-workflow.md)
-- [Ralph Wiggum Loop](https://www.youtube.com/watch?v=eAtvoGlpeRU) [![Implemented](!/tags/implemented.svg)](https://github.com/shanraisshan/novel-llm-26)
-- [Andrej Karpathy (Founding Member, OpenAI) Workflow](https://x.com/karpathy/status/2015883857489522876)
-- [Peter Steinberger (Creator of OpenClaw) Workflow](https://youtu.be/8lF7HmQ_RgY?t=2582)
-- Boris Cherny (Creator of Claude Code) Workflow — [13 Tips](tips/claude-boris-13-tips-03-jan-26.md) · [10 Tips](tips/claude-boris-10-tips-01-feb-26.md) · [12 Tips](tips/claude-boris-12-tips-12-feb-26.md) · [2 Tips](tips/claude-boris-2-tips-25-mar-26.md) · [15 Tips](tips/claude-boris-15-tips-30-mar-26.md) [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny)
+- [Ralph Wiggum 循环](https://www.youtube.com/watch?v=eAtvoGlpeRU) [![Implemented](!/tags/implemented.svg)](https://github.com/shanraisshan/novel-llm-26)
+- [Andrej Karpathy（OpenAI 创始成员）工作流](https://x.com/karpathy/status/2015883857489522876)
+- [Peter Steinberger（OpenClaw 创建者）工作流](https://youtu.be/8lF7HmQ_RgY?t=2582)
+- Boris Cherny（Claude Code 创建者）工作流 — [13 条技巧](tips/claude-boris-13-tips-03-jan-26.md) · [10 条技巧](tips/claude-boris-10-tips-01-feb-26.md) · [12 条技巧](tips/claude-boris-12-tips-12-feb-26.md) · [2 条技巧](tips/claude-boris-2-tips-25-mar-26.md) · [15 条技巧](tips/claude-boris-15-tips-30-mar-26.md) [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny)
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
-## 💡 TIPS AND TRICKS (69)
+## 💡 技巧和窍门 (69)
 
-🚫👶 = do not babysit
+🚫👶 = 不要包办代替
 
-[Prompting](#tips-prompting) · [Planning](#tips-planning) · [CLAUDE.md](#tips-claudemd) · [Agents](#tips-agents) · [Commands](#tips-commands) · [Skills](#tips-skills) · [Hooks](#tips-hooks) · [Workflows](#tips-workflows) · [Advanced](#tips-workflows-advanced) · [Git / PR](#tips-git-pr) · [Debugging](#tips-debugging) · [Utilities](#tips-utilities) · [Daily](#tips-daily)
+[提示词](#tips-prompting) · [规划](#tips-planning) · [CLAUDE.md](#tips-claudemd) · [代理](#tips-agents) · [命令](#tips-commands) · [技能](#tips-skills) · [钩子](#tips-hooks) · [工作流](#tips-workflows) · [进阶](#tips-workflows-advanced) · [Git / PR](#tips-git-pr) · [调试](#tips-debugging) · [工具](#tips-utilities) · [日常](#tips-daily)
 
 ![Community](!/tags/community.svg)
 
-<a id="tips-prompting"></a>■ **Prompting (3)**
+<a id="tips-prompting"></a>■ **提示词 (3)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| challenge Claude — "grill me on these changes and don't make a PR until I pass your test." or "prove to me this works" and have Claude diff between main and your branch 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
-| after a mediocre fix — "knowing everything you know now, scrap this and implement the elegant solution" 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
-| Claude fixes most bugs by itself — paste the bug, say "fix", don't micromanage how 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742750473720121) |
+| 挑战 Claude — "考验我这些修改，在通过你的测试之前不要创建 PR。"或者"向我证明这有效"并让 Claude 比较 main 和你的分支的区别 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
+| 在一个平庸的修复后 — "以你现在知道的一切，抛弃这个，实现优雅的解决方案" 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
+| Claude 能自己修复大多数 bug — 粘贴 bug，说"修复"，不要 micromanage 怎么做 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742750473720121) |
 
-<a id="tips-planning"></a>■ **Planning/Specs (6)**
+<a id="tips-planning"></a>■ **规划/规格 (6)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| always start with [plan mode](https://code.claude.com/docs/en/common-workflows) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179845336527000) |
-| start with a minimal spec or prompt and ask Claude to interview you using [AskUserQuestion](https://code.claude.com/docs/en/cli-reference) tool, then make a new session to execute the spec | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2005315275026260309) |
-| always make a phase-wise gated plan, with each phase having multiple tests (unit, automation, integration) | |
-| spin up a second Claude to review your plan as a staff engineer, or use [cross-model](development-workflows/cross-model-workflow/cross-model-workflow.md) for review | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742745365057733) |
-| write detailed specs and reduce ambiguity before handing work off — the more specific you are, the better the output | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
-| prototype > PRD — build 20-30 versions instead of writing specs, the cost of building is low so take many shots | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3630) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3630) |
+| 始终从 [计划模式](https://code.claude.com/docs/en/common-workflows) 开始 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179845336527000) |
+| 从一个最小的规格或提示开始，让 Claude 使用 [AskUserQuestion](https://code.claude.com/docs/en/cli-reference) 工具来采访你，然后开一个新会话来执行规格 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2005315275026260309) |
+| 始终做一个分阶段门控的计划，每个阶段有多个测试（单元、自动化、集成） | |
+| 启动第二个 Claude 作为 staff 工程师来审查你的计划，或使用 [跨模型](development-workflows/cross-model-workflow/cross-model-workflow.md) 进行审查 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742745365057733) |
+| 写详细的规格并减少模糊再交接工作 —— 你越具体，输出越好 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
+| 原型 > PRD — 构建 20-30 个版本而不是写规格，_BUILDING 的成本很低，所以多尝试 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3630) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3630) |
 
 <a id="tips-claudemd"></a>■ **CLAUDE.md (7)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| [CLAUDE.md](https://code.claude.com/docs/en/memory) should target under [200 lines](https://code.claude.com/docs/en/memory#write-effective-instructions) per file. [60 lines in humanlayer](https://www.humanlayer.dev/blog/writing-a-good-claude-md) ([still not 100% guaranteed](https://www.reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/)) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179840848597422) [![Dex](!/tags/community-dex.svg)](https://www.humanlayer.dev/blog/writing-a-good-claude-md) |
-| wrap domain-specific CLAUDE.md rules in [\<important if="..."\> tags](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md) to stop Claude from ignoring them as files grow longer | [![Dex](!/tags/community-dex.svg)](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md) |
-| use [multiple CLAUDE.md](best-practice/claude-memory.md) for monorepos — ancestor + descendant loading | |
-| use [.claude/rules/](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) to split large instructions | |
-| [memory.md](https://code.claude.com/docs/en/memory), constitution.md does not guarantee anything | |
-| any developer should be able to launch Claude, say "run the tests" and it works on the first try — if it doesn't, your CLAUDE.md is missing essential setup/build/test commands | [![Dex](!/tags/community-dex.svg)](https://x.com/dexhorthy/status/2034713765401551053) |
-| keep codebases clean and finish migrations — partially migrated frameworks confuse models that might pick the wrong pattern | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=1112) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=1112) |
-| use [settings.json](best-practice/claude-settings.md) for harness-enforced behavior (attribution, permissions, model) — don't put "NEVER add Co-Authored-By" in CLAUDE.md when `attribution.commit: ""` is deterministic | [![davila7](!/tags/community-davila7.svg)](https://x.com/dani_avila7/status/2036182734310195550) |
+| [CLAUDE.md](https://code.claude.com/docs/en/memory) 应该目标是每个文件不超过 [200 行](https://code.claude.com/docs/en/memory#write-effective-instructions)。[humanlayer 是 60 行](https://www.humanlayer.dev/blog/writing-a-good-claude-md)（[仍然不能 100% 保证](https://www.reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/)） | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179840848597422) [![Dex](!/tags/community-dex.svg)](https://www.humanlayer.dev/blog/writing-a-good-claude-md) |
+| 用 [\<important if="..."\> 标签](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md) 包裹领域特定的 CLAUDE.md 规则，防止文件变长后 Claude 忽略它们 | [![Dex](!/tags/community-dex.svg)](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md) |
+| monorepo 使用 [多个 CLAUDE.md](best-practice/claude-memory.md) —— 祖先 + 后代加载 | |
+| 使用 [.claude/rules/](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) 来拆分大型指令 | |
+| [memory.md](https://code.claude.com/docs/en/memory)、constitution.md 不能保证任何事情 | |
+| 任何开发者都应该能够启动 Claude，说"运行测试"并一次性成功 —— 如果不能，说明你的 CLAUDE.md 缺少必要的 setup/build/test 命令 | [![Dex](!/tags/community-dex.svg)](https://x.com/dexhorthy/status/2034713765401551053) |
+| 保持代码库干净并完成迁移 —— 部分迁移的框架会混淆模型，可能选错误的模式 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=1112) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=1112) |
+| 使用 [settings.json](best-practice/claude-settings.md) 来强制执行 harness 行为（归属、权限、模型）—— 当 `attribution.commit: ""` 是确定性的时候，不要在 CLAUDE.md 里写"NEVER add Co-Authored-By" | [![davila7](!/tags/community-davila7.svg)](https://x.com/dani_avila7/status/2036182734310195550) |
 
-<a id="tips-agents"></a><img src="!/tags/a.svg" height="14"> **Agents (4)**
+<a id="tips-agents"></a><img src="!/tags/a.svg" height="14"> **代理 (4)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| have feature specific [sub-agents](https://code.claude.com/docs/en/sub-agents) (extra context) with [skills](https://code.claude.com/docs/en/skills) (progressive disclosure) instead of general qa, backend engineer | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179850139000872) |
-| say "use subagents" to throw more compute at a problem — offload tasks to keep your main context clean and focused 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
-| [agent teams with tmux](https://code.claude.com/docs/en/agent-teams) and [git worktrees](https://x.com/bcherny/status/2025007393290272904) for parallel development | |
-| use [test time compute](https://code.claude.com/docs/en/sub-agents) — separate context windows make results better; one agent can cause bugs and another (same model) can find them | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031151689219321886) |
+| 使用特定功能的 [子代理](https://code.claude.com/docs/en/sub-agents)（额外上下文）+ [技能](https://code.claude.com/docs/en/skills)（渐进式披露），而不是通用的 QA、后端工程师 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179850139000872) |
+| 说"use subagents"来为问题投入更多计算资源 —— 卸载任务来保持主上下文干净和专注 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
+| 使用 [带 tmux 的代理团队](https://code.claude.com/docs/en/agent-teams) 和 [git worktrees](https://x.com/bcherny/status/2025007393290272904) 进行并行开发 | |
+| 使用 [测试时计算](https://code.claude.com/docs/en/sub-agents) —— 分离的上下文窗口让结果更好；一个代理可能产生 bug，另一个（相同模型）可以发现它们 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031151689219321886) |
 
-<a id="tips-commands"></a><img src="!/tags/c.svg" height="14"> **Commands (3)**
+<a id="tips-commands"></a><img src="!/tags/c.svg" height="14"> **命令 (3)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| use [commands](https://code.claude.com/docs/en/slash-commands) for your workflows instead of [sub-agents](https://code.claude.com/docs/en/sub-agents) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
-| use [slash commands](https://code.claude.com/docs/en/slash-commands) for every "inner loop" workflow you do many times a day — saves repeated prompting, commands live in `.claude/commands/` and are checked into git | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
-| if you do something more than once a day, turn it into a [skill](https://code.claude.com/docs/en/skills) or [command](https://code.claude.com/docs/en/slash-commands) — build `/techdebt`, context-dump, or analytics commands | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742748984742078) |
+| 为工作流使用 [命令](https://code.claude.com/docs/en/slash-commands) 而不是 [子代理](https://code.claude.com/docs/en/sub-agents) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
+| 为你每天做很多次的每个"内部循环"工作流使用 [斜杠命令](https://code.claude.com/docs/en/slash-commands) —— 节省重复提示，命令存在于 `.claude/commands/` 并纳入版本控制 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
+| 如果你一天做某事超过一次，把它变成一个 [技能](https://code.claude.com/docs/en/skills) 或 [命令](https://code.claude.com/docs/en/slash-commands) —— 构建 `/techdebt`、context-dump 或分析命令 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742748984742078) |
 
-<a id="tips-skills"></a><img src="!/tags/s.svg" height="14"> **Skills (9)**
+<a id="tips-skills"></a><img src="!/tags/s.svg" height="14"> **技能 (9)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| use [context: fork](https://code.claude.com/docs/en/skills) to run a skill in an isolated subagent — main context only sees the final result, not intermediate tool calls. The agent field lets you set the subagent type | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2033603164398883042) |
-| use [skills in subfolders](reports/claude-skills-for-larger-mono-repos.md) for monorepos | |
-| skills are folders, not files — use references/, scripts/, examples/ subdirectories for [progressive disclosure](https://code.claude.com/docs/en/skills) | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| build a Gotchas section in every skill — highest-signal content, add Claude's failure points over time | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| skill description field is a trigger, not a summary — write it for the model ("when should I fire?") | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| don't state the obvious in skills — focus on what pushes Claude out of its default behavior 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| don't railroad Claude in skills — give goals and constraints, not prescriptive step-by-step instructions 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| include scripts and libraries in skills so Claude composes rather than reconstructs boilerplate | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| embed `` !`command` `` in SKILL.md to inject dynamic shell output into the prompt — Claude runs it on invocation and the model only sees the result | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2034337963820327017) |
+| 使用 [context: fork](https://code.claude.com/docs/en/skills) 在隔离的子代理中运行技能 —— 主上下文只看到最终结果，而不是中间的工具调用。agent 字段让你设置子代理类型 | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2033603164398883042) |
+| monorepo 使用 [子文件夹中的技能](reports/claude-skills-for-larger-mono-repos.md) | |
+| 技能是文件夹，不是文件 —— 使用 references/、scripts/、examples/ 子目录用于 [渐进式披露](https://code.claude.com/docs/en/skills) | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 在每个技能中构建 Gotchas 部分 —— 最高信号的内容，随时间添加 Claude 的失败点 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 技能 description 字段是触发器，不是总结 —— 为模型写（"我什么时候应该触发？"） | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 不要在技能中说显而易见的事 —— 专注于推动 Claude 走出默认行为的内容 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 不要在技能中给 Claude 铺轨道 —— 给出目标和约束，而不是规定性的逐步说明 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 在技能中包含脚本和库，让 Claude 组合而不是重建样板代码 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 在 SKILL.md 中嵌入 `` !`command` `` 来注入动态 shell 输出到提示 —— Claude 在调用时运行它，模型只看到结果 | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2034337963820327017) |
 
-<a id="tips-hooks"></a>■ **Hooks (5)**
+<a id="tips-hooks"></a>■ **钩子 (5)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| use [on-demand hooks](https://code.claude.com/docs/en/skills) in skills — /careful blocks destructive commands, /freeze blocks edits outside a directory | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| [measure skill usage](https://code.claude.com/docs/en/skills) with a PreToolUse hook to find popular or undertriggering skills | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| use a [PostToolUse hook](https://code.claude.com/docs/en/hooks) to auto-format code — Claude generates well-formatted code, the hook handles the last 10% to avoid CI failures | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179852047335529) |
-| route [permission requests](https://code.claude.com/docs/en/hooks) to Opus via a hook — let it scan for attacks and auto-approve safe ones 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
-| use a [Stop hook](https://code.claude.com/docs/en/hooks) to nudge Claude to keep going or verify its work at the end of a turn | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701059253874861) |
+| 在技能中使用 [按需钩子](https://code.claude.com/docs/en/skills) —— /careful 阻止破坏性命令，/freeze 阻止目录外的编辑 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 用 PreToolUse 钩子 [测量技能使用](https://code.claude.com/docs/en/skills) 来发现流行或触发不足的技能 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 使用 [PostToolUse 钩子](https://code.claude.com/docs/en/hooks) 自动格式化代码 —— Claude 生成格式良好的代码，钩子处理最后 10% 以避免 CI 失败 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179852047335529) |
+| 通过钩子将 [权限请求](https://code.claude.com/docs/en/hooks) 路由到 Opus —— 让它扫描攻击并自动批准安全的 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
+| 使用 [Stop 钩子](https://code.claude.com/docs/en/hooks) 在回合结束时推动 Claude 继续或验证其工作 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701059253874861) |
 
-<a id="tips-workflows"></a>■ **Workflows (7)**
+<a id="tips-workflows"></a>■ **工作流 (7)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| avoid agent dumb zone, do manual [/compact](https://code.claude.com/docs/en/interactive-mode) at max 50%. Use [/clear](https://code.claude.com/docs/en/cli-reference) to reset context mid-session if switching to a new task | |
-| vanilla cc is better than any workflows with smaller tasks | |
-| use [/model](https://code.claude.com/docs/en/model-config) to select model and reasoning, [/context](https://code.claude.com/docs/en/interactive-mode) to see context usage, [/usage](https://code.claude.com/docs/en/costs) to check plan limits, [/extra-usage](https://code.claude.com/docs/en/interactive-mode) to configure overflow billing, [/config](https://code.claude.com/docs/en/settings) to configure settings — use Opus for plan mode and Sonnet for code to get the best of both | [![Cat](!/tags/cat-wu.svg)](https://x.com/_catwu/status/1955694117264261609) |
-| always use [thinking mode](https://code.claude.com/docs/en/model-config) true (to see reasoning) and [Output Style](https://code.claude.com/docs/en/output-styles) Explanatory (to see detailed output with ★ Insight boxes) in [/config](https://code.claude.com/docs/en/settings) for better understanding of Claude's decisions | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179838864666847) |
-| use ultrathink keyword in prompts for [high effort reasoning](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking#tips-and-best-practices) | |
-| [/rename](https://code.claude.com/docs/en/cli-reference) important sessions (e.g. [TODO - refactor task]) and [/resume](https://code.claude.com/docs/en/cli-reference) them later — label each instance when running multiple Claudes simultaneously | [![Cat](!/tags/cat-wu.svg)](https://every.to/podcast/how-to-use-claude-code-like-the-people-who-built-it) |
-| use [Esc Esc or /rewind](https://code.claude.com/docs/en/checkpointing) to undo when Claude goes off-track instead of trying to fix it in the same context | |
+| 避免代理愚蠢区域，手动 [/compact](https://code.claude.com/docs/en/interactive-mode) 在最大 50%。如果切换到新任务，使用 [/clear](https://code.claude.com/docs/en/cli-reference) 重置会话中的上下文 | |
+| 原生 cc 比任何带小任务的工作流更好 | |
+| 使用 [/model](https://code.claude.com/docs/en/model-config) 选择模型和推理，[/context](https://code.claude.com/docs/en/interactive-mode) 查看上下文使用，[/usage](https://code.claude.com/docs/en/costs) 检查计划限制，[/extra-usage](https://code.claude.com/docs/en/interactive-mode) 配置超额计费，[/config](https://code.claude.com/docs/en/settings) 配置设置 —— 计划模式用 Opus，编码用 Sonnet，兼顾两者 | [![Cat](!/tags/cat-wu.svg)](https://x.com/_catwu/status/1955694117264261609) |
+| 始终在 [/config](https://code.claude.com/docs/en/settings) 中使用 [thinking mode](https://code.claude.com/docs/en/model-config) true（查看推理）和 [Output Style](https://code.claude.com/docs/en/output-styles) Explanatory（查看带 ★ Insight 框的详细输出），以便更好地理解 Claude 的决策 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179838864666847) |
+| 在提示中使用 ultrathink 关键字进行 [高强度推理](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking#tips-and-best-practices) | |
+| [/rename](https://code.claude.com/docs/en/cli-reference) 重要会话（例如 [TODO - 重构任务]），然后 [/resume](https://code.claude.com/docs/en/cli-reference) 它们 —— 同时运行多个 Claude 时给每个实例做标签 | [![Cat](!/tags/cat-wu.svg)](https://every.to/podcast/how-to-use-claude-code-like-the-people-who-built-it) |
+| 使用 [Esc Esc 或 /rewind](https://code.claude.com/docs/en/checkpointing) 在 Claude 脱轨时撤销，而不是在同一上下文中试图修复它 | |
 
-<a id="tips-workflows-advanced"></a>■ **Workflows Advanced (6)**
+<a id="tips-workflows-advanced"></a>■ **工作流进阶 (6)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| use ASCII diagrams a lot to understand your architecture | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742759218794768) |
-| use [/loop](https://code.claude.com/docs/en/scheduled-tasks) for local recurring monitoring (up to 3 days) · use [/schedule](https://code.claude.com/docs/en/web-scheduled-tasks) for cloud-based recurring tasks that run even when your machine is off | |
-| use [Ralph Wiggum plugin](https://github.com/shanraisshan/novel-llm-26) for long-running autonomous tasks | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179858435281082) |
-| [/permissions](https://code.claude.com/docs/en/permissions) with wildcard syntax (Bash(npm run *), Edit(/docs/**)) instead of dangerously-skip-permissions | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179854077407667) |
-| [/sandbox](https://code.claude.com/docs/en/sandboxing) to reduce permission prompts with file and network isolation — 84% reduction internally | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700506465579443) [![Cat](!/tags/cat-wu.svg)](https://creatoreconomy.so/p/inside-claude-code-how-an-ai-native-actually-works-cat-wu) |
-| invest in [product verification](https://code.claude.com/docs/en/skills) skills (signup-flow-driver, checkout-verifier) — worth spending a week to perfect | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 多用 ASCII 图表来理解你的架构 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742759218794768) |
+| 使用 [/loop](https://code.claude.com/docs/en/scheduled-tasks) 进行本地定期监控（最长 3 天）· 使用 [/schedule](https://code.claude.com/docs/en/web-scheduled-tasks) 进行云端定期任务，即使你的机器关闭也能运行 | |
+| 使用 [Ralph Wiggum 插件](https://github.com/shanraisshan/novel-llm-26) 进行长时间运行的自主任务 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179858435281082) |
+| 使用通配符语法的 [/permissions](https://code.claude.com/docs/en/permissions)（Bash(npm run *), Edit(/docs/**)）而不是 dangerously-skip-permissions | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179854077407667) |
+| 使用 [/sandbox](https://code.claude.com/docs/en/sandboxing) 通过文件和网络隔离减少权限提示 —— 内部减少 84% | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700506465579443) [![Cat](!/tags/cat-wu.svg)](https://creatoreconomy.so/p/inside-claude-code-how-an-ai-native-actually-works-cat-wu) |
+| 投资 [产品验证](https://code.claude.com/docs/en/skills) 技能（signup-flow-driver、checkout-verifier）—— 值得花一周时间完善 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
 
 <a id="tips-git-pr"></a>■ **Git / PR (5)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| keep PRs small and focused — [p50 of 118 lines](tips/claude-boris-2-tips-25-mar-26.md) (141 PRs, 45K lines changed in a day), one feature per PR, easier to review and revert | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
-| always [squash merge](tips/claude-boris-2-tips-25-mar-26.md) PRs — clean linear history, one commit per feature, easy git revert and git bisect | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
-| commit often — try to commit at least once per hour, as soon as task is completed, commit | ![Shayan](!/tags/community-shayan.svg) |
-| tag [@claude](https://github.com/apps/claude) on a coworker's PR to auto-generate lint rules for recurring review feedback — automate yourself out of code review 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=2715) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=2715) |
-| use [/code-review](https://code.claude.com/docs/en/code-review) for multi-agent PR analysis — catches bugs, security vulnerabilities, and regressions before merge | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031089411820228645) |
+| 保持 PR 小而专注 —— [p50 为 118 行](tips/claude-boris-2-tips-25-mar-26.md)（141 个 PR，一天改 45K 行），每个 PR 一个功能，便于审查和回滚 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
+| 始终 [压缩合并](tips/claude-boris-2-tips-25-mar-26.md) PR —— 干净的线性历史，每个功能一个提交，便于 git revert 和 git bisect | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
+| 经常提交 —— 尝试每小时至少提交一次，任务完成后立即提交 | ![Shayan](!/tags/community-shayan.svg) |
+| 在同事的 PR 上 tag [@claude](https://github.com/apps/claude) 自动生成 lint 规则来处理重复的审查反馈 —— 把自己从代码审查中自动化出来 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=2715) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=2715) |
+| 使用 [/code-review](https://code.claude.com/docs/en/code-review) 进行多代理 PR 分析 —— 在合并前捕获 bug、安全漏洞和回归 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031089411820228645) |
 
-<a id="tips-debugging"></a>■ **Debugging (7)**
+<a id="tips-debugging"></a>■ **调试 (7)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| make it a habit to take screenshots and share with Claude whenever you are stuck with any issue | ![Shayan](!/tags/community-shayan.svg) |
-| use mcp ([Claude in Chrome](https://code.claude.com/docs/en/chrome), [Playwright](https://github.com/microsoft/playwright-mcp), [Chrome DevTools](https://developer.chrome.com/blog/chrome-devtools-mcp)) to let claude see chrome console logs on its own | |
-| always ask claude to run the terminal (you want to see logs of) as a background task for better debugging | |
-| [/doctor](https://code.claude.com/docs/en/cli-reference) to diagnose installation, authentication, and configuration issues | |
-| error during compaction can be resolved by using [/model](https://code.claude.com/docs/en/model-config) to select a 1M token model, then running [/compact](https://code.claude.com/docs/en/interactive-mode) | |
-| use a [cross-model](development-workflows/cross-model-workflow/cross-model-workflow.md) for QA — e.g. [Codex](https://github.com/shanraisshan/codex-cli-best-practice) for plan and implementation review | |
-| agentic search (glob + grep) beats RAG — Claude Code tried and discarded vector databases because code drifts out of sync and permissions are complex | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3095) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3095) |
+| 养成在遇到问题时截图并与 Claude 分享的习惯 | ![Shayan](!/tags/community-shayan.svg) |
+| 使用 mcp（[Chrome 中的 Claude](https://code.claude.com/docs/en/chrome)、[Playwright](https://github.com/microsoft/playwright-mcp)、[Chrome DevTools](https://developer.chrome.com/blog/chrome-devtools-mcp)）让 Claude 自己查看 Chrome 控制台日志 | |
+| 总是让 Claude 把想看日志的终端作为后台任务运行，以便更好地调试 | |
+| 使用 [/doctor](https://code.claude.com/docs/en/cli-reference) 诊断安装、认证和配置问题 | |
+| 压缩时的错误可以通过使用 [/model](https://code.claude.com/docs/en/model-config) 选择 1M token 模型，然后运行 [/compact](https://code.claude.com/docs/en/interactive-mode) 来解决 | |
+| 使用 [跨模型](development-workflows/cross-model-workflow/cross-model-workflow.md) 进行 QA —— 例如用 [Codex](https://github.com/shanraisshan/codex-cli-best-practice) 进行计划和实现审查 | |
+| 代理搜索（glob + grep）比 RAG 更好 —— Claude Code 尝试并放弃了向量数据库，因为代码会漂移不同步，权限也复杂 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3095) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3095) |
 
-<a id="tips-utilities"></a>■ **Utilities (5)**
+<a id="tips-utilities"></a>■ **工具 (5)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| [iTerm](https://iterm2.com/)/[Ghostty](https://ghostty.org/)/[tmux](https://github.com/tmux/tmux) terminals instead of IDE ([VS Code](https://code.visualstudio.com/)/[Cursor](https://www.cursor.com/)) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742753971769626) |
-| [/voice](https://code.claude.com/docs/en/voice-dictation) or [Wispr Flow](https://wisprflow.ai) for voice prompting (10x productivity) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038454362226467112) |
-| [claude-code-hooks](https://github.com/shanraisshan/claude-code-hooks) for claude feedback | ![Shayan](!/tags/community-shayan.svg) |
-| [status line](https://github.com/shanraisshan/claude-code-status-line) for context awareness and fast compacting | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700784019452195) ![Shayan](!/tags/community-shayan.svg) |
-| explore [settings.json](best-practice/claude-settings.md) features like [Plans Directory](best-practice/claude-settings.md#plans-directory), [Spinner Verbs](best-practice/claude-settings.md#display--ux) for a personalized experience | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701145023197516) |
+| 使用 [iTerm](https://iterm2.com/)/[Ghostty](https://ghostty.org/)/[tmux](https://github.com/tmux/tmux) 终端而不是 IDE（[VS Code](https://code.visualstudio.com/)/[Cursor](https://www.cursor.com/)） | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742753971769626) |
+| 使用 [/voice](https://code.claude.com/docs/en/voice-dictation) 或 [Wispr Flow](https://wisprflow.ai) 进行语音提示（10 倍生产力） | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038454362226467112) |
+| 使用 [claude-code-hooks](https://github.com/shanraisshan/claude-code-hooks) 获取 Claude 反馈 | ![Shayan](!/tags/community-shayan.svg) |
+| 使用 [状态行](https://github.com/shanraisshan/claude-code-status-line) 了解上下文和快速压缩 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700784019452195) ![Shayan](!/tags/community-shayan.svg) |
+| 探索 [settings.json](best-practice/claude-settings.md) 的功能，如 [Plans Directory](best-practice/claude-settings.md#plans-directory)、[Spinner Verbs](best-practice/claude-settings.md#display--ux)，获得个性化体验 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701145023197516) |
 
-<a id="tips-daily"></a>■ **Daily (2)**
+<a id="tips-daily"></a>■ **日常 (2)**
 
-| Tip | Source |
+| 技巧 | 来源 |
 |-----|--------|
-| [update](https://code.claude.com/docs/en/setup) Claude Code daily | ![Shayan](!/tags/community-shayan.svg) |
-| start your day by reading the [changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) | ![Shayan](!/tags/community-shayan.svg) |
+| 每天 [更新](https://code.claude.com/docs/en/setup) Claude Code | ![Shayan](!/tags/community-shayan.svg) |
+| 每天早上阅读 [changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) 开始新的一天 | ![Shayan](!/tags/community-shayan.svg) |
 
-![Boris Cherny + Team](!/tags/claude.svg)
+![Boris Cherny + 团队](!/tags/claude.svg)
 
-| Article / Tweet | Source |
+| 文章 / 推文 | 来源 |
 |-----------------|--------|
-| [15 Hidden & Under-Utilized Features in Claude Code (Boris) \| 30/Mar/26](tips/claude-boris-15-tips-30-mar-26.md) | [Tweet](https://x.com/bcherny/status/2038454336355999749) |
-| [Squash Merging & PR Size Distribution (Boris) \| 25/Mar/26](tips/claude-boris-2-tips-25-mar-26.md) | [Tweet](https://x.com/bcherny/status/2038552880018538749) |
-| [Lessons from Building Claude Code: How We Use Skills (Thariq) \| 17/Mar/26](tips/claude-thariq-tips-17-mar-26.md) | [Article](https://x.com/trq212/status/2033949937936085378) |
-| [Code Review & Test Time Compute (Boris) \| 10/Mar/26](tips/claude-boris-2-tips-10-mar-26.md) | [Tweet](https://x.com/bcherny/status/2031089411820228645) |
-| /loop — schedule recurring tasks for up to 3 days (Boris) \| 07 Mar 2026 | [Tweet](https://x.com/bcherny/status/2030193932404150413) |
-| AskUserQuestion + ASCII Markdowns (Thariq) \| 28 Feb 2026 | [Tweet](https://x.com/trq212/status/2027543858289250472) |
-| Seeing like an Agent - lessons from building Claude Code (Thariq) \| 28 Feb 2026 | [Article](https://x.com/trq212/status/2027463795355095314) |
-| Git Worktrees - 5 ways how boris is using \| 21 Feb 2026 | [Tweet](https://x.com/bcherny/status/2025007393290272904) |
-| Lessons from Building Claude Code: Prompt Caching Is Everything (Thariq) \| 20 Feb 2026 | [Article](https://x.com/trq212/status/2024574133011673516) |
-| [12 ways how people are customizing their claudes (Boris) \| 12/Feb/26](tips/claude-boris-12-tips-12-feb-26.md) | [Tweet](https://x.com/bcherny/status/2021699851499798911) |
-| [10 tips for using Claude Code from the team (Boris) \| 01/Feb/26](tips/claude-boris-10-tips-01-feb-26.md) | [Tweet](https://x.com/bcherny/status/2017742741636321619) |
-| [How I use Claude Code — 13 tips from my surprisingly vanilla setup (Boris) \| 03/Jan/26](tips/claude-boris-13-tips-03-jan-26.md) | [Tweet](https://x.com/bcherny/status/2007179832300581177) |
-| Ask Claude to interview you using AskUserQuestion tool (Thariq) \| 28/Dec/25 | [Tweet](https://x.com/trq212/status/2005315275026260309) |
-| Always use plan mode, give Claude a way to verify, use /code-review (Boris) \| 27/Dec/25 | [Tweet](https://x.com/bcherny/status/2004711722926616680) |
+| [Claude Code 中 15 个隐藏和未被充分利用的功能 (Boris) \| 2026年3月30日](tips/claude-boris-15-tips-30-mar-26.md) | [推文](https://x.com/bcherny/status/2038454336355999749) |
+| [压缩合并与 PR 大小分布 (Boris) \| 2026年3月25日](tips/claude-boris-2-tips-25-mar-26.md) | [推文](https://x.com/bcherny/status/2038552880018538749) |
+| [构建 Claude Code 的经验：我们如何使用技能 (Thariq) \| 2026年3月17日](tips/claude-thariq-tips-17-mar-26.md) | [文章](https://x.com/trq212/status/2033949937936085378) |
+| [代码审查与测试时计算 (Boris) \| 2026年3月10日](tips/claude-boris-2-tips-10-mar-26.md) | [推文](https://x.com/bcherny/status/2031089411820228645) |
+| /loop — 安排最长 3 天的定期任务 (Boris) \| 2026年3月7日 | [推文](https://x.com/bcherny/status/2030193932404150413) |
+| AskUserQuestion + ASCII Markdown (Thariq) \| 2026年2月28日 | [推文](https://x.com/trq212/status/2027543858289250472) |
+| 像代理一样看问题 - 构建 Claude Code 的经验 (Thariq) \| 2026年2月28日 | [文章](https://x.com/trq212/status/2027463795355095314) |
+| Git Worktrees - Boris 使用它的 5 种方式 \| 2026年2月21日 | [推文](https://x.com/bcherny/status/2025007393290272904) |
+| 构建 Claude Code 的经验：提示缓存就是一切 (Thariq) \| 2026年2月20日 | [文章](https://x.com/trq212/status/2024574133011673516) |
+| [人们定制他们的 Claude 的 12 种方式 (Boris) \| 2026年2月12日](tips/claude-boris-12-tips-12-feb-26.md) | [推文](https://x.com/bcherny/status/2021699851499798911) |
+| [团队使用 Claude Code 的 10 条技巧 (Boris) \| 2026年2月1日](tips/claude-boris-10-tips-01-feb-26.md) | [推文](https://x.com/bcherny/status/2017742741636321619) |
+| [我如何使用 Claude Code — 来自令人惊讶的原生设置的 13 条技巧 (Boris) \| 2026年1月3日](tips/claude-boris-13-tips-03-jan-26.md) | [推文](https://x.com/bcherny/status/2007179832300581177) |
+| 让 Claude 使用 AskUserQuestion 工具采访你 (Thariq) \| 2025年12月28日 | [推文](https://x.com/trq212/status/2005315275026260309) |
+| 始终使用计划模式，给 Claude 一种验证方式，使用 /code-review (Boris) \| 2025年12月27日 | [推文](https://x.com/bcherny/status/2004711722926616680) |
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
-## 🎬 VIDEOS / PODCASTS
+## 🎬 视频 / 播客
 
-| Video / Podcast | Source | YouTube |
+| 视频 / 播客 | 来源 | YouTube |
 |-----------------|--------|---------|
-| Everything We Got Wrong About Research-Plan-Implement (Dex) \| 24 Mar 2026 \| MLOps Community | [![Dex](!/tags/community-dex.svg)](https://x.com/daborhyde) | [YouTube](https://youtu.be/YwZR6tc7qYg) |
-| Building Claude Code with Boris Cherny (Boris) \| 04 Mar 2026 \| The Pragmatic Engineer | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/julbw1JuAz0) |
-| Head of Claude Code: What happens after coding is solved (Boris) \| 19 Feb 2026 \| Lenny's Podcast | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/We7BZVKbCVw) |
-| Inside Claude Code With Its Creator Boris Cherny (Boris) \| 17 Feb 2026 \| Y Combinator | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/PQU9o_5rHC4) |
-| Boris Cherny (Creator of Claude Code) On What Grew His Career (Boris) \| 15 Dec 2025 \| Ryan Peterman | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/AmdLVWMdjOk) |
-| The Secrets of Claude Code From the Engineers Who Built It (Cat) \| 29 Oct 2025 \| Every | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/IDSAMqip6ms) |
+| 我们在研究-计划-实施中犯的所有错误 (Dex) \| 2026年3月24日 \| MLOps 社区 | [![Dex](!/tags/community-dex.svg)](https://x.com/daborhyde) | [YouTube](https://youtu.be/YwZR6tc7qYg) |
+| 与 Boris Cherny 构建 Claude Code (Boris) \| 2026年3月4日 \| The Pragmatic Engineer | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/julbw1JuAz0) |
+| Claude Code 负责人：编码解决后会发生什么 (Boris) \| 2026年2月19日 \| Lenny's Podcast | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/We7BZVKbCVw) |
+| 与创造者 Boris Cherny 深入了解 Claude Code (Boris) \| 2026年2月17日 \| Y Combinator | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/PQU9o_5rHC4) |
+| Boris Cherny（Claude Code 创造者）谈是什么促成了他的职业生涯 (Boris) \| 2025年12月15日 \| Ryan Peterman | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/AmdLVWMdjOk) |
+| 来自构建 Claude Code 的工程师的秘密 (Cat) \| 2025年10月29日 \| Every | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny) | [YouTube](https://youtu.be/IDSAMqip6ms) |
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
-## 🔔 SUBSCRIBE
+## 🔔 订阅
 
-| Source | Name | Badge |
+| 来源 | 名称 | 徽章 |
 |--------|------|-------|
 | ![Reddit](https://img.shields.io/badge/-FF4500?style=flat&logo=reddit&logoColor=white) | [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/), [r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/), [r/Anthropic](https://www.reddit.com/r/Anthropic/) | ![Boris + Team](!/tags/claude.svg) |
 | ![X](https://img.shields.io/badge/-000?style=flat&logo=x&logoColor=white) | [Claude](https://x.com/claudeai), [Anthropic](https://x.com/AnthropicAI), [Boris](https://x.com/bcherny), [Thariq](https://x.com/trq212), [Cat](https://x.com/_catwu), [Lydia](https://x.com/lydiahallie), [Noah](https://x.com/noahzweben), [Anthony](https://x.com/amorriscode), [Alex](https://x.com/alexalbert__), [Kenneth](https://x.com/neilhtennek) | ![Boris + Team](!/tags/claude.svg) |
@@ -314,56 +314,56 @@ All major workflows converge on the same architectural pattern: **Research → P
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
-## ☠️ STARTUPS / BUSINESSES
+## ☠️ 初创公司 / 企业
 
-| Claude | Replaced |
+| Claude | 替代方案 |
 |-|-|
-|[**Code Review**](https://code.claude.com/docs/en/code-review)|[Greptile](https://greptile.com), [CodeRabbit](https://coderabbit.ai), [Devin Review](https://devin.ai), [OpenDiff](https://opendiff.com), [Cursor BugBot](https://bugbot.dev)|
-|[**Voice Dictation**](https://code.claude.com/docs/en/voice-dictation)|[Wispr Flow](https://wisprflow.ai), [SuperWhisper](https://superwhisper.com/)|
-|[**Remote Control**](https://code.claude.com/docs/en/remote-control)|[OpenClaw](https://openclaw.ai/)
-|[**Claude in Chrome**](https://code.claude.com/docs/en/chrome)|[Playwright MCP](https://github.com/microsoft/playwright-mcp), [Chrome DevTools MCP](https://developer.chrome.com/blog/chrome-devtools-mcp)|
-|[**Computer Use**](https://docs.anthropic.com/en/docs/agents-and-tools/computer-use)|[OpenAI CUA](https://openai.com/index/computer-using-agent/)|
-|[**Cowork**](https://claude.com/blog/cowork-research-preview)|[ChatGPT Agent](https://openai.com/chatgpt/agent/), [Perplexity Computer](https://www.perplexity.ai/computer/), [Manus](https://manus.im)|
-|[**Tasks**](https://x.com/trq212/status/2014480496013803643)|[Beads](https://github.com/steveyegge/beads)
-|[**Plan Mode**](https://code.claude.com/docs/en/common-workflows)|[Agent OS](https://github.com/buildermethods/agent-os)|
-|[**Skills / Plugins**](https://code.claude.com/docs/en/plugins)|YC AI wrapper startups ([reddit](https://reddit.com/r/ClaudeAI/comments/1r6bh4d/claude_code_skills_are_basically_yc_ai_startup/))|
+|[**代码审查**](https://code.claude.com/docs/en/code-review)|[Greptile](https://greptile.com)、[CodeRabbit](https://coderabbit.ai)、[Devin Review](https://devin.ai)、[OpenDiff](https://opendiff.com)、[Cursor BugBot](https://bugbot.dev)|
+|[**语音听写**](https://code.claude.com/docs/en/voice-dictation)|[Wispr Flow](https://wisprflow.ai)、[SuperWhisper](https://superwhisper.com/)|
+|[**远程控制**](https://code.claude.com/docs/en/remote-control)|[OpenClaw](https://openclaw.ai/)|
+|[**Chrome 中的 Claude**](https://code.claude.com/docs/en/chrome)|[Playwright MCP](https://github.com/microsoft/playwright-mcp)、[Chrome DevTools MCP](https://developer.chrome.com/blog/chrome-devtools-mcp)|
+|[**计算机使用**](https://docs.anthropic.com/en/docs/agents-and-tools/computer-use)|[OpenAI CUA](https://openai.com/index/computer-using-agent/)|
+|[**Cowork**](https://claude.com/blog/cowork-research-preview)|[ChatGPT Agent](https://openai.com/chatgpt/agent/)、[Perplexity Computer](https://www.perplexity.ai/computer/)、[Manus](https://manus.im)|
+|[**任务**](https://x.com/trq212/status/2014480496013803643)|[Beads](https://github.com/steveyegge/beads)|
+|[**计划模式**](https://code.claude.com/docs/en/common-workflows)|[Agent OS](https://github.com/buildermethods/agent-os)|
+|[**技能 / 插件**](https://code.claude.com/docs/en/plugins)|YC AI 封装初创公司（[reddit](https://reddit.com/r/ClaudeAI/comments/1r6bh4d/claude_code_skills_are_basically_yc_ai_startup/)）|
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
 <a id="billion-dollar-questions"></a>
-![Billion-Dollar Questions](!/tags/billion-dollar-questions.svg)
+![十亿美元问题](!/tags/billion-dollar-questions.svg)
 
-*If you have answers, do let me know at shanraisshan@gmail.com*
+*如果你有答案，请发邮件到 shanraisshan@gmail.com 告诉我*
 
-**Memory & Instructions (4)**
+**记忆与指令 (4)**
 
-1. What exactly should you put inside your CLAUDE.md — and what should you leave out?
-2. If you already have a CLAUDE.md, is a separate constitution.md or rules.md actually needed?
-3. How often should you update your CLAUDE.md, and how do you know when it's become stale?
-4. Why does Claude still ignore CLAUDE.md instructions — even when they say MUST in all caps? ([reddit](https://reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/))
+1. CLAUDE.md 里到底应该放什么——什么又应该去掉？
+2. 如果你已经有 CLAUDE.md，还需要单独的 constitution.md 或 rules.md 吗？
+3. 应该多久更新一次 CLAUDE.md？如何判断它已经过时了？
+4. 为什么 Claude 仍然会忽略 CLAUDE.md 中的指令——即使全部大写写着 MUST？（[reddit](https://reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/)）
 
-**Agents, Skills & Workflows (6)**
+**智能体、技能与工作流 (6)**
 
-1. When should you use a command vs an agent vs a skill — and when is vanilla Claude Code just better?
-2. How often should you update your agents, commands, and workflows as models improve?
-3. Does giving your subagent a detailed persona improve quality? What does a "perfect persona/prompt" for research/QA subagent look like?
-4. Should you rely on Claude Code's built-in plan mode — or build your own planning command/agent that enforces your team's workflow?
-5. If you have a personal skill (e.g., /implement with your coding style), how do you incorporate community skills (e.g., /simplify) without conflicts — and who wins when they disagree?
-6. Are we there yet? Can we convert an existing codebase into specs, delete the code, and have AI regenerate the exact same code from those specs alone?
+1. 何时使用命令 vs 智能体 vs 技能——以及何时直接用原生 Claude Code 更好？
+2. 随着模型能力的提升，应该多久更新一次你的智能体、命令和工作流？
+3. 给子智能体赋予详细人设能提升质量吗？研究/QA 子智能体的"完美人设/提示词"长什么样？
+4. 应该依赖 Claude Code 内置的计划模式，还是构建自己的计划命令/智能体来强制执行团队工作流？
+5. 如果你有个人技能（例如 /implement 带有你的编码风格），如何在不冲突的情况下融入社区技能（例如 /simplify）——当它们产生分歧时谁说了算？
+6. 我们到了吗？能否将现有代码库转换为规格说明，删除代码，然后仅凭这些规格说明让 AI 重新生成完全相同的代码？
 
-**Specs & Documentation (3)**
+**规格与文档 (3)**
 
-1. Should every feature in your repo have a spec as a markdown file?
-2. How often do you need to update specs so they don't become obsolete when a new feature is implemented?
+1. 代码库中的每个功能都应该有一个 Markdown 规格文件吗？
+2. 需要多久更新一次规格文件，以避免实现新功能时变得过时？
 3. When implementing a new feature, how do you handle the ripple effect on specs for other features?
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
-## REPORTS
+## 报告
 
 <p align="center">
   <a href="reports/claude-agent-sdk-vs-cli-system-prompts.md"><img src="https://img.shields.io/badge/Agent_SDK_vs_CLI-555?style=for-the-badge" alt="Agent SDK vs CLI"></a>
@@ -398,19 +398,19 @@ All major workflows converge on the same architectural pattern: **Research → P
 </p>
 
 <p align="center">
-  <a href="https://github.com/trending?since=monthly"><img src="!/root/github-trending.png" alt="GitHub Trending" width="1200"></a><br>
-  ✨Trending on Github in March 2026✨
+  <a href="https://github.com/trending?since=monthly"><img src="!/root/github-trending.png" alt="GitHub 趋势" width="1200"></a><br>
+  ✨2026年3月 GitHub 趋势榜✨
 </p>
 
-## Other Repos
+## 其他代码库
 
 <a href="https://github.com/shanraisshan/claude-code-hooks"><img src="!/claude-speaking.svg" alt="Claude Code Hooks" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/claude-code-hooks"><strong>claude-code-hooks</strong></a> · <a href="https://github.com/shanraisshan/codex-cli-best-practice"><img src="!/codex-jumping.svg" alt="Codex CLI" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/codex-cli-best-practice"><strong>codex-cli-best-practice</strong></a> · <a href="https://github.com/shanraisshan/codex-cli-hooks"><img src="!/codex-speaking.svg" alt="Codex CLI Hooks" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/codex-cli-hooks"><strong>codex-cli-hooks</strong></a>
 
-## Developed by
+## 开发者
 
-![Developed by](!/tags/developed-by.svg)
+![开发者](!/tags/developed-by.svg)
 
-> | # | Workflow | Description |
+> | # | 工作流 | 描述 |
 > |---|----------|-------------|
 > | 1 | /workflows:development-workflows | Update the DEVELOPMENT WORKFLOWS table and cross-workflow analysis report by researching all 10 workflow repos in parallel |
 > | 2 | /workflows:best-practice:workflow-concepts | Update the README CONCEPTS section with the latest Claude Code features and concepts |
@@ -427,3 +427,117 @@ All major workflows converge on the same architectural pattern: **Research → P
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=shanraisshan/claude-code-best-practice&type=Date)](https://star-history.com/#shanraisshan/claude-code-best-practice&Date)
+
+## ☠️ 初创公司 / 企业
+
+| Claude | 替代方案 |
+|-|-|
+|[**代码审查**](https://code.claude.com/docs/en/code-review)|[Greptile](https://greptile.com)、[CodeRabbit](https://coderabbit.ai)、[Devin Review](https://devin.ai)、[OpenDiff](https://opendiff.com)、[Cursor BugBot](https://bugbot.dev)|
+|[**语音听写**](https://code.claude.com/docs/en/voice-dictation)|[Wispr Flow](https://wisprflow.ai)、[SuperWhisper](https://superwhisper.com/)|
+|[**远程控制**](https://code.claude.com/docs/en/remote-control)|[OpenClaw](https://openclaw.ai/)|
+|[**Chrome 中的 Claude**](https://code.claude.com/docs/en/chrome)|[Playwright MCP](https://github.com/microsoft/playwright-mcp)、[Chrome DevTools MCP](https://developer.chrome.com/blog/chrome-devtools-mcp)|
+|[**计算机使用**](https://docs.anthropic.com/en/docs/agents-and-tools/computer-use)|[OpenAI CUA](https://openai.com/index/computer-using-agent/)|
+|[**Cowork**](https://claude.com/blog/cowork-research-preview)|[ChatGPT Agent](https://openai.com/chatgpt/agent/)、[Perplexity Computer](https://www.perplexity.ai/computer/)、[Manus](https://manus.im)|
+|[**任务**](https://x.com/trq212/status/2014480496013803643)|[Beads](https://github.com/steveyegge/beads)|
+|[**计划模式**](https://code.claude.com/docs/en/common-workflows)|[Agent OS](https://github.com/buildermethods/agent-os)|
+|[**技能 / 插件**](https://code.claude.com/docs/en/plugins)|YC AI 封装初创公司（[reddit](https://reddit.com/r/ClaudeAI/comments/1r6bh4d/claude_code_skills_are_basically_yc_ai_startup/)）|
+
+<p align="center">
+  <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
+</p>
+
+<a id="billion-dollar-questions"></a>
+![十亿美元问题](!/tags/billion-dollar-questions.svg)
+
+*如果你有答案，请发邮件到 shanraisshan@gmail.com 告诉我*
+
+**记忆与指令 (4)**
+
+1. CLAUDE.md 里到底应该放什么——什么又应该去掉？
+2. 如果你已经有 CLAUDE.md，还需要单独的 constitution.md 或 rules.md 吗？
+3. 应该多久更新一次 CLAUDE.md？如何判断它已经过时了？
+4. 为什么 Claude 仍然会忽略 CLAUDE.md 中的指令——即使全部大写写着 MUST？（[reddit](https://reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/)）
+
+**智能体、技能与工作流 (6)**
+
+1. 何时使用命令 vs 智能体 vs 技能——以及何时直接用原生 Claude Code 更好？
+2. 随着模型能力的提升，应该多久更新一次你的智能体、命令和工作流？
+3. 给子智能体赋予详细人设能提升质量吗？研究/QA 子智能体的"完美人设/提示词"长什么样？
+4. 应该依赖 Claude Code 内置的计划模式，还是构建自己的计划命令/智能体来强制执行团队工作流？
+5. 如果你有个人技能（例如 /implement 带有你的编码风格），如何在不冲突的情况下融入社区技能（例如 /simplify）——当它们产生分歧时谁说了算？
+6. 我们到了吗？能否将现有代码库转换为规格说明，删除代码，然后仅凭这些规格说明让 AI 重新生成完全相同的代码？
+
+**规格与文档 (3)**
+
+1. 代码库中的每个功能都应该有一个 Markdown 规格文件吗？
+2. 需要多久更新一次规格文件，以避免实现新功能时变得过时？
+3. 实现新功能时，如何处理对其他功能规格的连锁影响？
+
+<p align="center">
+  <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
+</p>
+
+## 报告
+
+<p align="center">
+  <a href="reports/claude-agent-sdk-vs-cli-system-prompts.md"><img src="https://img.shields.io/badge/Agent_SDK_vs_CLI-555?style=for-the-badge" alt="Agent SDK vs CLI"></a>
+  <a href="reports/claude-in-chrome-v-chrome-devtools-mcp.md"><img src="https://img.shields.io/badge/Browser_Automation_MCP-555?style=for-the-badge" alt="Browser Automation MCP"></a>
+  <a href="reports/claude-global-vs-project-settings.md"><img src="https://img.shields.io/badge/Global_vs_Project_Settings-555?style=for-the-badge" alt="Global vs Project Settings"></a>
+  <a href="reports/claude-skills-for-larger-mono-repos.md"><img src="https://img.shields.io/badge/Skills_in_Monorepos-555?style=for-the-badge" alt="Skills in Monorepos"></a>
+  <br>
+  <a href="reports/claude-agent-memory.md"><img src="https://img.shields.io/badge/Agent_Memory-555?style=for-the-badge" alt="Agent Memory"></a>
+  <a href="reports/claude-advanced-tool-use.md"><img src="https://img.shields.io/badge/Advanced_Tool_Use-555?style=for-the-badge" alt="Advanced Tool Use"></a>
+  <a href="reports/claude-usage-and-rate-limits.md"><img src="https://img.shields.io/badge/Usage_&_Rate_Limits-555?style=for-the-badge" alt="Usage & Rate Limits"></a>
+  <a href="reports/claude-agent-command-skill.md"><img src="https://img.shields.io/badge/Agents_vs_Commands_vs_Skills-555?style=for-the-badge" alt="Agents vs Commands vs Skills"></a>
+  <br>
+  <a href="reports/llm-day-to-day-degradation.md"><img src="https://img.shields.io/badge/LLM_Degradation-555?style=for-the-badge" alt="LLM Degradation"></a>
+</p>
+
+<p align="center">
+  <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
+</p>
+
+![如何使用](!/tags/how-to-use.svg)
+
+\\\
+1. 像学习课程一样阅读代码库，在尝试使用之前弄清楚什么是命令、智能体、技能和钩子。
+2. 克隆此代码库并动手实验，试试 /weather-orchestrator，听听钩子音效，运行智能体团队，这样你就能看到它们实际是如何工作的。
+3. 打开你自己的项目，让 Claude 建议你应该从本代码库中添加哪些最佳实践，给它这个代码库作为参考，这样它就知道有哪些可能性。
+\\\
+
+<a href="https://www.youtube.com/watch?v=AkAhkalkRY4"><img src="!/thumbnail/video-1.png" alt="在 YouTube 上观看" width="300"></a>
+
+<p align="center">
+  <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
+</p>
+
+<p align="center">
+  <a href="https://github.com/trending?since=monthly"><img src="!/root/github-trending.png" alt="GitHub 趋势" width="1200"></a><br>
+  ✨2026年3月 GitHub 趋势榜✨
+</p>
+
+## 其他代码库
+
+<a href="https://github.com/shanraisshan/claude-code-hooks"><img src="!/claude-speaking.svg" alt="Claude Code Hooks" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/claude-code-hooks"><strong>claude-code-hooks</strong></a> · <a href="https://github.com/shanraisshan/codex-cli-best-practice"><img src="!/codex-jumping.svg" alt="Codex CLI" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/codex-cli-best-practice"><strong>codex-cli-best-practice</strong></a> · <a href="https://github.com/shanraisshan/codex-cli-hooks"><img src="!/codex-speaking.svg" alt="Codex CLI Hooks" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/codex-cli-hooks"><strong>codex-cli-hooks</strong></a>
+
+## 开发者
+
+![开发者](!/tags/developed-by.svg)
+
+> | # | 工作流 | 描述 |
+> |---|----------|-------------|
+> | 1 | /workflows:development-workflows | 并行研究所有 10 个工作流代码库，更新开发工作流表和跨工作流分析报告 |
+> | 2 | /workflows:best-practice:workflow-concepts | 使用最新的 Claude Code 功能和概念更新 README 概念部分 |
+> | 3 | /workflows:best-practice:workflow-claude-settings | 跟踪 Claude Code 设置报告的变更，找出需要更新的内容 |
+> | 4 | /workflows:best-practice:workflow-claude-subagents | 跟踪 Claude Code 子智能体报告的变更，找出需要更新的内容 |
+> | 5 | /workflows:best-practice:workflow-claude-commands | 跟踪 Claude Code 命令报告的变更，找出需要更新的内容 |
+> | 6 | /workflows:best-practice:workflow-claude-skills | 跟踪 Claude Code 技能报告的变更，找出需要更新的内容 |
+
+[![开源版 Claude](!/tags/claude-for-oss.svg)](https://claude.com/contact-sales/claude-for-oss)
+[![Claude 社区大使](!/tags/claude-community-ambassador.svg)](https://claude.com/community/ambassadors)
+[![Claude 认证架构师](!/tags/claude-certified-architect.svg)](https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request)
+[![Anthropic 学院](!/tags/anthropic-academy.svg)](https://anthropic.skilljar.com/)
+
+## Star History
+
+[![Star History 图表](https://api.star-history.com/svg?repos=shanraisshan/claude-code-best-practice&type=Date)](https://star-history.com/#shanraisshan/claude-code-best-practice&Date)
